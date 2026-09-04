@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Weather App</title>
 
     <style>
@@ -42,7 +43,7 @@
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/weather"
+                    "/api/weather"
                 );
 
                 const data = await response.json();
