@@ -2,13 +2,13 @@ services:
 
   backend:
     build: ./backend
-    container_name: weather-backend
+    container_name: oil-spill-fastapi
     ports:
-      - "5000:5000"
+      - "8000:8000"
 
   frontend:
     build: ./frontend
-    container_name: weather-frontend
+    container_name: oil-spill-frontend
     ports:
       - "8080:80"
     depends_on:
